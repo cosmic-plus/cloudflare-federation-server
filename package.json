@@ -1,0 +1,24 @@
+{
+  "name": "cloudflare-federation-server",
+  "version": "1.0.0",
+  "description": "A simple Stellar federation server implementation that uses Cloudflare workers",
+  "author": "MisterTicot <mister.ticot@cosmic.plus>",
+  "homepage": "https://cosmic.plus/#view:cloudflare-federation-server",
+  "repository": "github:cosmic-plus/cloudflare-federation-server",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "devDependencies": {
+    "husky": "^2.1.0",
+    "prettier": "^1.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format",
+      "pre-push": "npm run format"
+    }
+  }
+}
